@@ -2,7 +2,7 @@
 Turns on and off rf sockets
 
 ## About
-Turns on and fof rf sockets
+Turns on and off rf sockets
 
 ## Examples
 * "Light on"
