@@ -9,7 +9,7 @@ class Rpirf(MycroftSkill):
 
 
     @intent_file_handler('rpirf.intent')
-    def handle_rpirf(self, code, message):
+    def handle_rpirf(self, message):
         rfdevice = RFDevice(17) #default gpio pin
         rfdevice.enable_tx()
         rfdevice.tx_code(267580, 1, 173) #code, protocol, pulse
