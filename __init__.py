@@ -13,7 +13,7 @@ class Rpirf(MycroftSkill):
         rfdevice = RFDevice(17) #default gpio pin
         rfdevice.enable_tx()
         rfdevice.tx_code(267580, 1, 173) #code, protocol, pulse
-        refdevice.cleanup()
+        rfdevice.cleanup()
         self.speak_dialog('rpirf')
 
 
