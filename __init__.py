@@ -1,5 +1,7 @@
-from mycroft import MycroftSkill, intent_file_handler
+import sys
+sys.path.insert(0,'/usr/local/lib/python3.5/dist-packages/rpi_rf')
 from rpi_rf import RFDevice
+from mycroft import MycroftSkill, intent_file_handler
 
 class Rpirf(MycroftSkill):
     def __init__(self):
